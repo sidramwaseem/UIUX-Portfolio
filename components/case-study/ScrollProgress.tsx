@@ -1,0 +1,17 @@
+"use client";
+
+import { motion, useScroll, useReducedMotion } from "framer-motion";
+
+export default function ScrollProgress() {
+  const { scrollYProgress } = useScroll();
+  const reduced = useReducedMotion();
+
+  if (reduced) return null;
+
+  return (
+    <motion.div
+      className="fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-accent"
+      style={{ scaleX: scrollYProgress }}
+    />
+  );
+}
