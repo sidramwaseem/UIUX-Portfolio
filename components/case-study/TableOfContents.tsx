@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const TOC_ITEMS = [
+const DEFAULT_TOC_ITEMS = [
   { id: "overview", label: "Overview" },
   { id: "problem", label: "Problem" },
   { id: "my-role", label: "My Role" },
@@ -11,7 +11,13 @@ const TOC_ITEMS = [
   { id: "outcome", label: "Outcome" },
 ];
 
-export default function TableOfContents() {
+interface TocItem {
+  id: string;
+  label: string;
+}
+
+export default function TableOfContents({ items }: { items?: TocItem[] }) {
+  const TOC_ITEMS = items ?? DEFAULT_TOC_ITEMS;
   const [active, setActive] = useState("overview");
 
   useEffect(() => {

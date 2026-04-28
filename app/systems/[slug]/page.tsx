@@ -54,7 +54,7 @@ export default async function CaseStudyPage({ params }: Props) {
     <>
       <ScrollProgress />
 
-      <main className="mx-auto max-w-page px-6 pb-24 pt-24 md:px-12 md:pt-28 lg:px-20">
+      <main className="animate-fade-in mx-auto max-w-page px-6 pb-24 pt-24 md:px-12 md:pt-28 lg:px-20">
         {/* Header — full width */}
         <CaseStudyHeader study={study} />
 

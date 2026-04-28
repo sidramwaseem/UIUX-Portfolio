@@ -45,6 +45,7 @@ export interface CaseStudy {
   role: string;
   client: string;
   readingTime: string;
+  previewImage?: string;
 
   overview: string;
   overviewImages?: CaseStudyImage[];

@@ -12,6 +12,7 @@ const caseStudies: CaseStudy[] = [
     role: "UI/UX Designer & UI Developer",
     client: "Confidential — B2B Warehouse Automation",
     readingTime: "~6 min read",
+    previewImage: "/images/case-studies/cart-lifecycle/Hero%20Image.png",
 
     overview:
       "I led the design of the Cart Lifecycle Module — a core component of a B2B warehouse automation platform used by operations teams to manage cart movement from induction to completion. The module enables users to track cart states, configure tote layouts, and coordinate actions across both admin and workstation interfaces. My focus was on structuring complex workflows, reducing operational friction, and ensuring reliable state transitions in real-time environments.",
@@ -239,6 +240,27 @@ const caseStudies: CaseStudy[] = [
         "Many of the most important design decisions were not about layout — they were about defining how the system behaves under real operational conditions. In high-stakes warehouse environments, clarity and explicit control consistently outperform automation. The best interactions were the ones operators didn't have to think about — not because the system decided for them, but because the interface made the right action obvious.",
     },
     outcomeImages: [],
+  },
+  {
+    slug: "right-click-filter-indication",
+    title: "Right-Click Filter Indication",
+    subtitle:
+      "Making a hidden interaction visible in a data-heavy B2B warehouse platform.",
+    tags: ["UX Design", "B2B"],
+    year: "—",
+    duration: "—",
+    role: "—",
+    client: "Confidential — B2B Warehouse Platform",
+    readingTime: "~5 min read",
+    previewImage: "/images/case-studies/Right-Click%20Filter/1.1.png",
+
+    // Fields below are not used — this study renders via its own static page.
+    overview: "",
+    problem: { statement: "", context: "" },
+    myRole: { description: "", responsibilities: [] },
+    process: [],
+    keyDecisions: [],
+    outcome: { summary: "" },
   },
 ];
 

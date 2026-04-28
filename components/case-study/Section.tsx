@@ -1,3 +1,7 @@
+"use client";
+
+import { motion, useReducedMotion } from "framer-motion";
+
 interface SectionProps {
   id: string;
   index: number;
@@ -6,10 +10,16 @@ interface SectionProps {
 }
 
 export default function Section({ id, index, heading, children }: SectionProps) {
+  const reduced = useReducedMotion();
+
   return (
-    <section
+    <motion.section
       id={id}
       className="scroll-mt-28 border-t border-[#D9D7D2] pt-14 md:pt-16"
+      initial={reduced ? false : { opacity: 0, y: 18 }}
+      whileInView={reduced ? undefined : { opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
     >
       {/* Eyebrow */}
       <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-disabled">
@@ -25,7 +35,7 @@ export default function Section({ id, index, heading, children }: SectionProps) 
       <div className="space-y-5 text-[16px] leading-[1.75] text-ink-secondary md:text-[17px]">
         {children}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -3,15 +3,15 @@ import type { CaseStudyImage } from "@/lib/types";
 
 export default function ImagePlaceholder({ slot, src, alt, caption }: CaseStudyImage) {
   return (
-    <figure className="w-full">
+    <figure className="group w-full">
       {src ? (
-        <div className="relative w-full overflow-hidden rounded-xl">
+        <div className="relative w-full overflow-hidden rounded-xl transition-shadow duration-500 ease-out group-hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
           <Image
             src={src}
             alt={alt ?? caption ?? `Image ${slot}`}
             width={1200}
             height={800}
-            className="w-full h-auto"
+            className="h-auto w-full transition-transform duration-500 ease-out group-hover:scale-[1.02]"
           />
         </div>
       ) : (

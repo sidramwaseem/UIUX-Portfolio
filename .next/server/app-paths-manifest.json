@@ -1,5 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/surfaces/page": "app/surfaces/page.js",
   "/page": "app/page.js",
-  "/surfaces/page": "app/surfaces/page.js"
+  "/systems/page": "app/systems/page.js",
+  "/systems/right-click-filter-indication/page": "app/systems/right-click-filter-indication/page.js",
+  "/systems/[slug]/page": "app/systems/[slug]/page.js"
 }
