@@ -19,9 +19,9 @@ export default function OutcomeGrid({ metrics }: OutcomeGridProps) {
 
           {/* Label + context */}
           <div className="mt-6">
-            <p className="text-[13px] leading-[1.5] text-card-text">{metric.label}</p>
+            <p className="text-[15px] leading-[1.5] text-card-text">{metric.label}</p>
             {metric.context && (
-              <p className="mt-1 font-mono text-[11px] text-card-secondary">{metric.context}</p>
+              <p className="mt-1 font-mono text-[12px] text-card-secondary">{metric.context}</p>
             )}
           </div>
         </div>

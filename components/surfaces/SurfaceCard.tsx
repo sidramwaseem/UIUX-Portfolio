@@ -69,7 +69,7 @@ export default function SurfaceCard({ surface }: SurfaceCardProps) {
 
           {/* Slide counter */}
           {isCarousel && isHovered && (
-            <div className="absolute top-3 right-3 rounded-full bg-black/50 px-2 py-0.5 font-mono text-[10px] text-white/80 backdrop-blur-sm pointer-events-none">
+            <div className="absolute top-3 right-3 rounded-full bg-black/50 px-2 py-0.5 font-mono text-[11px] text-white/80 backdrop-blur-sm pointer-events-none">
               {currentIndex + 1} / {images!.length}
             </div>
           )}
@@ -78,19 +78,19 @@ export default function SurfaceCard({ surface }: SurfaceCardProps) {
 
       <div className="mt-4 px-0.5">
         <div className="mb-2.5 flex items-center justify-between">
-          <span className="rounded-full bg-accent-muted px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.08em] text-accent">
+          <span className="rounded-full bg-accent-muted px-2.5 py-0.5 font-mono text-[11px] uppercase tracking-[0.08em] text-accent">
             {isCarousel ? `${images!.length} slides` : "Post"}
           </span>
-          <span className="font-mono text-[11px] text-ink-disabled">{year}</span>
+          <span className="font-mono text-[12px] text-ink-disabled">{year}</span>
         </div>
 
-        <h3 className="text-[15px] font-medium leading-[1.4] text-ink transition-colors duration-150 group-hover:text-accent">
+        <h3 className="text-[16px] font-medium leading-[1.4] text-ink transition-colors duration-150 group-hover:text-accent">
           {title}
         </h3>
 
-        <p className="mt-1.5 text-[13px] leading-[1.6] text-ink-disabled">{description}</p>
+        <p className="mt-1.5 text-[14px] leading-[1.6] text-ink-disabled">{description}</p>
 
-        <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.07em] text-ink-disabled">
+        <p className="mt-2 font-mono text-[12px] uppercase tracking-[0.07em] text-ink-disabled">
           {client}
         </p>
       </div>

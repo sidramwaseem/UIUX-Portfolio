@@ -16,7 +16,7 @@ export default function CaseStudyHeader({ study }: CaseStudyHeaderProps) {
       {/* Back link */}
       <Link
         href="/systems"
-        className="mb-10 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-disabled transition-colors duration-150 hover:text-ink-secondary"
+        className="mb-10 inline-flex items-center gap-2 font-mono text-[13px] uppercase tracking-[0.1em] text-ink-disabled transition-colors duration-150 hover:text-ink-secondary"
       >
         <span className="inline-block transition-transform duration-150 group-hover:-translate-x-0.5">
           ←
@@ -29,7 +29,7 @@ export default function CaseStudyHeader({ study }: CaseStudyHeaderProps) {
         {tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full border border-[#D9D7D2] px-3 py-1 font-mono text-[11px] uppercase tracking-[0.08em] text-ink-secondary"
+            className="rounded-full border border-[#D9D7D2] px-3 py-1 font-mono text-[12px] uppercase tracking-[0.08em] text-ink-secondary"
           >
             {tag}
           </span>
@@ -58,16 +58,16 @@ export default function CaseStudyHeader({ study }: CaseStudyHeaderProps) {
           { label: "Client", value: client },
         ].map(({ label, value }) => (
           <div key={label}>
-            <dt className="mb-1 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-disabled">
+            <dt className="mb-1 font-mono text-[12px] uppercase tracking-[0.12em] text-ink-disabled">
               {label}
             </dt>
-            <dd className="text-[14px] text-ink">{value}</dd>
+            <dd className="text-[16px] text-ink">{value}</dd>
           </div>
         ))}
       </dl>
 
       {/* Reading time */}
-      <p className="mt-6 font-mono text-[11px] tracking-wide text-ink-disabled">
+      <p className="mt-6 font-mono text-[13px] tracking-wide text-ink-disabled">
         {readingTime}
       </p>
     </header>

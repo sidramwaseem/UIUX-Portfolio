@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer utilities {
+  /* Consistent max-width container used across all pages and sections */
+  .page-container {
+    @apply w-full mx-auto max-w-page px-6 md:px-12 lg:px-20;
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) both;
   }

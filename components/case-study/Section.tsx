@@ -22,7 +22,7 @@ export default function Section({ id, index, heading, children }: SectionProps) 
       transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
     >
       {/* Eyebrow */}
-      <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-disabled">
+      <p className="mb-3 font-mono text-[12px] uppercase tracking-[0.14em] text-ink-disabled">
         {String(index).padStart(2, "0")} — {heading}
       </p>
 
@@ -62,7 +62,7 @@ export function Callout({
         {children}
       </blockquote>
       {attribution && (
-        <figcaption className="mt-3 font-mono text-[11px] uppercase tracking-[0.08em] text-ink-disabled">
+        <figcaption className="mt-3 font-mono text-[12px] uppercase tracking-[0.08em] text-ink-disabled">
           {attribution}
         </figcaption>
       )}

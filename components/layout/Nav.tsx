@@ -8,7 +8,6 @@ const NAV_LINKS = [
   { label: "Case Studies", href: "/systems" },
   { label: "Social Media Work", href: "/surfaces" },
   { label: "Shots", href: "/shots" },
-  { label: "About", href: "/about" },
 ];
 
 export default function Nav() {
@@ -31,9 +30,11 @@ export default function Nav() {
     >
       <Link
         href="/"
-        className="font-mono text-[18px] uppercase tracking-[0.12em] text-ink transition-opacity duration-150 hover:opacity-60"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-full transition-opacity duration-150 hover:opacity-80"
+        style={{ backgroundColor: "#FF6B6B" }}
+        aria-label="Sidra Waseem — Home"
       >
-        SF
+        <span className="font-serif text-[18px] leading-none tracking-[-0.04em] text-white">SW</span>
       </Link>
 
       <ul className="hidden items-center gap-8 md:flex">

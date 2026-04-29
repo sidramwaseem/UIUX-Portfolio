@@ -14,12 +14,12 @@ export default function ProcessTimeline({ steps }: ProcessTimelineProps) {
           <div className="absolute -left-[29px] top-[6px] h-2 w-2 rounded-full border-2 border-accent bg-bg" />
 
           {/* Phase label */}
-          <p className="mb-2 font-mono text-[11px] uppercase tracking-[0.1em] text-accent">
+          <p className="mb-2 font-mono text-[12px] uppercase tracking-[0.1em] text-accent">
             {step.phase}
           </p>
 
           {/* Description */}
-          <p className="text-[15px] leading-[1.7] text-ink-secondary">
+          <p className="text-[16px] leading-[1.7] text-ink-secondary">
             {step.description}
           </p>
 

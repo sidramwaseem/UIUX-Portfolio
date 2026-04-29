@@ -44,7 +44,7 @@ export default function TableOfContents({ items }: { items?: TocItem[] }) {
 
   return (
     <aside className="sticky top-28 hidden w-44 shrink-0 lg:block">
-      <p className="mb-5 font-mono text-[10px] uppercase tracking-[0.14em] text-ink-disabled">
+      <p className="mb-5 font-mono text-[12px] uppercase tracking-[0.14em] text-ink-disabled">
         Contents
       </p>
       <nav>
@@ -55,7 +55,7 @@ export default function TableOfContents({ items }: { items?: TocItem[] }) {
               <li key={id}>
                 <a
                   href={`#${id}`}
-                  className={`flex items-center gap-3 text-[12px] uppercase tracking-[0.07em] transition-colors duration-150 ${
+                  className={`flex items-center gap-3 text-[14px] uppercase tracking-[0.07em] transition-colors duration-150 ${
                     isActive
                       ? "text-ink"
                       : "text-ink-disabled hover:text-ink-secondary"

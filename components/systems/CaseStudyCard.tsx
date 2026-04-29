@@ -54,7 +54,7 @@ export default function CaseStudyCard({ study }: Props) {
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-[#D9D7D2] px-3 py-0.5 font-mono text-[10px] uppercase tracking-[0.08em] text-ink-secondary"
+                className="rounded-full border border-[#D9D7D2] px-3 py-0.5 font-mono text-[11px] uppercase tracking-[0.08em] text-ink-secondary"
               >
                 {tag}
               </span>
@@ -69,7 +69,7 @@ export default function CaseStudyCard({ study }: Props) {
         </div>
 
         <div className="shrink-0 text-left md:text-right">
-          <p className="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-disabled">
+          <p className="font-mono text-[13px] uppercase tracking-[0.1em] text-ink-disabled">
             {year}
           </p>
           <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-disabled">
@@ -99,7 +99,7 @@ export default function CaseStudyCard({ study }: Props) {
                   className="h-auto w-full"
                 />
               </div>
-              <p className="mt-2 line-clamp-1 font-mono text-[10px] uppercase tracking-[0.1em] text-ink-disabled">
+              <p className="mt-2 line-clamp-1 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-disabled">
                 {subtitle}
               </p>
             </motion.div>

@@ -11,7 +11,7 @@ export default function HomePage() {
       {/* About section — full-bleed coral, flows directly from hero */}
       <HomeAbout />
 
-      <main className="mx-auto max-w-page px-6 pb-20 md:px-12 lg:px-20">
+      <main className="page-container pt-20 pb-24 md:pt-24 lg:pt-28">
         <HomeGrid />
 
         <footer className="mt-20 flex items-center justify-between border-t border-[#D9D7D2] pt-8">

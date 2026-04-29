@@ -21,11 +21,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/systems/[slug]/page.js"
     ],
-    "/systems/right-click-filter-indication/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/systems/right-click-filter-indication/page.js"
-    ],
     "/surfaces/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -36,10 +31,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/shots/page.js"
     ],
-    "/about/page": [
+    "/systems/right-click-filter-indication/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
+      "static/chunks/app/systems/right-click-filter-indication/page.js"
     ]
   }
 }

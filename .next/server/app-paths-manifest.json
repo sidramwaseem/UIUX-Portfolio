@@ -4,5 +4,5 @@
   "/systems/[slug]/page": "app/systems/[slug]/page.js",
   "/surfaces/page": "app/surfaces/page.js",
   "/shots/page": "app/shots/page.js",
-  "/about/page": "app/about/page.js"
+  "/systems/right-click-filter-indication/page": "app/systems/right-click-filter-indication/page.js"
 }
