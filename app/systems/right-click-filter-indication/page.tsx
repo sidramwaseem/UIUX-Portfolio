@@ -37,7 +37,7 @@ export default function RightClickFilterIndicationPage() {
     <>
       <ScrollProgress />
 
-      <main className="animate-fade-in mx-auto max-w-page px-6 pb-24 pt-24 md:px-12 md:pt-28 lg:px-20">
+      <main className="animate-fade-in page-container pb-24 pt-24 md:pt-28">
         <CaseStudyHeader study={STUDY_META} />
 
         <div className="flex gap-16 lg:gap-20">
@@ -370,7 +370,7 @@ export default function RightClickFilterIndicationPage() {
             ← Case Studies
           </a>
           <a
-            href="mailto:Waseem.sidra2025@gmail.com"
+            href="mailto:sidraw24@gmail.com"
             className="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-secondary transition-colors duration-150 hover:text-ink"
           >
             Work together →

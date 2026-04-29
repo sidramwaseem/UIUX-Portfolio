@@ -50,6 +50,8 @@ export default async function CaseStudyPage({ params }: Props) {
     outcomeImages,
   } = study;
 
+  const optionalOffset = (constraints ? 1 : 0) + (solutionOverview ? 1 : 0);
+
   return (
     <>
       <ScrollProgress />
@@ -135,7 +137,7 @@ export default async function CaseStudyPage({ params }: Props) {
             {/* Process — index shifts based on optional sections */}
             <Section
               id="process"
-              index={4 + (constraints ? 1 : 0) + (solutionOverview ? 1 : 0)}
+              index={4 + optionalOffset}
               heading="Process"
             >
               <Prose>
@@ -148,7 +150,7 @@ export default async function CaseStudyPage({ params }: Props) {
             {/* Key Decisions */}
             <Section
               id="key-decisions"
-              index={5 + (constraints ? 1 : 0) + (solutionOverview ? 1 : 0)}
+              index={5 + optionalOffset}
               heading="Key Decisions"
             >
               <Prose>
@@ -166,7 +168,7 @@ export default async function CaseStudyPage({ params }: Props) {
             {/* Outcome */}
             <Section
               id="outcome"
-              index={6 + (constraints ? 1 : 0) + (solutionOverview ? 1 : 0)}
+              index={6 + optionalOffset}
               heading="Outcome"
             >
               <Prose>{outcome.summary}</Prose>
@@ -196,7 +198,7 @@ export default async function CaseStudyPage({ params }: Props) {
             ← Case Studies
           </a>
           <a
-            href="mailto:Waseem.sidra2025@gmail.com"
+            href="mailto:sidraw24@gmail.com"
             className="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-secondary transition-colors duration-150 hover:text-ink"
           >
             Work together →

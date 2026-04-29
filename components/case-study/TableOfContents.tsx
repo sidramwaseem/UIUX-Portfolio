@@ -40,7 +40,7 @@ export default function TableOfContents({ items }: { items?: TocItem[] }) {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [TOC_ITEMS]);
 
   return (
     <aside className="sticky top-28 hidden w-44 shrink-0 lg:block">

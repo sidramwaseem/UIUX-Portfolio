@@ -14,7 +14,6 @@ const config: Config = {
       },
       colors: {
         bg: "#FFF6EE",
-        primary: "#FF6B6B",
         accent: {
           DEFAULT: "#FF6B6B",
           hover: "#e55a5a",
@@ -22,11 +21,8 @@ const config: Config = {
         },
         card: {
           bg: "#1C1B1A",
-          border: "#2E2D2B",
-          "border-hover": "#FF6B6B",
           text: "#F0EDE8",
           secondary: "#8A877F",
-          dim: "#4A4845",
         },
         ink: {
           DEFAULT: "#1A1917",
@@ -36,9 +32,6 @@ const config: Config = {
       },
       maxWidth: {
         page: "1280px",
-      },
-      transitionTimingFunction: {
-        "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
       },
     },
   },
