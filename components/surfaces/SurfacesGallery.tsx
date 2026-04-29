@@ -16,7 +16,7 @@ export default function SurfacesGallery({ onLock }: SurfacesGalleryProps) {
             <p className="mb-4 font-mono text-[12px] uppercase tracking-[0.14em] text-ink-disabled">
               Marketing &amp; brand design
             </p>
-            <h1 className="font-serif text-[48px] leading-[1.04] text-ink md:text-[64px]">
+            <h1 className="font-serif text-[28px] leading-[1.04] text-ink sm:text-[36px] md:text-[48px] lg:text-[64px]">
               Social Media Work
             </h1>
             <p className="mt-4 max-w-[40ch] text-[16px] leading-[1.65] text-ink-secondary">

@@ -30,20 +30,20 @@ export default function Hero() {
 
         {/* Name + animated role — bottom-left anchor */}
         <div>
-          <h1 className="font-serif text-[64px] leading-[1.05] tracking-[-0.02em] text-ink">
+          <h1 className="font-serif text-[36px] leading-[1.05] tracking-[-0.02em] text-ink sm:text-[48px] md:text-[64px]">
             Sidra Waseem
           </h1>
 
           {/* Clip window — only one role visible at a time */}
           <div
-            className="relative mt-1 h-[68px] overflow-hidden"
+            className="relative mt-1 h-[40px] overflow-hidden sm:h-[54px] md:h-[68px]"
             aria-live="polite"
             aria-atomic="true"
           >
             <AnimatePresence initial={false}>
               <motion.span
                 key={index}
-                className="absolute font-serif text-[64px] leading-[1.05] tracking-[-0.02em] whitespace-nowrap"
+                className="absolute font-serif text-[36px] leading-[1.05] tracking-[-0.02em] whitespace-nowrap sm:text-[48px] md:text-[64px]"
                 style={{ color: "#FF6B6B" }}
                 initial={reduced ? false : { y: "100%", opacity: 0 }}
                 animate={{ y: "0%", opacity: 1 }}
@@ -55,14 +55,14 @@ export default function Hero() {
             </AnimatePresence>
           </div>
 
-          <p className="mt-6 max-w-sm text-[20px] leading-relaxed text-ink-secondary">
+          <p className="mt-6 max-w-sm text-[16px] leading-relaxed text-ink-secondary md:text-[18px] lg:text-[20px]">
             I design systems that feel inevitable —<br />
             usually after rethinking them three times.
           </p>
         </div>
 
         {/* Whimsical one-liner — bottom-right, for compositional balance */}
-        <p className="absolute bottom-12 right-6 text-right text-[20px] leading-relaxed text-ink-secondary md:bottom-16 md:right-12 lg:bottom-20 lg:right-20">
+        <p className="absolute bottom-12 right-6 text-right text-[14px] leading-relaxed text-ink-secondary sm:text-[16px] md:bottom-16 md:right-12 md:text-[18px] lg:bottom-20 lg:right-20 lg:text-[20px]">
           Designing things people use.<br />
           Occasionally on purpose.
         </p>

@@ -7,7 +7,7 @@ export default function SystemsPage() {
       <p className="mb-4 font-mono text-[11px] uppercase tracking-[0.14em] text-ink-disabled">
         UX &amp; product design
       </p>
-      <h1 className="font-serif text-[48px] leading-[1.04] text-ink md:text-[64px]">
+      <h1 className="font-serif text-[32px] leading-[1.04] text-ink sm:text-[40px] md:text-[48px] lg:text-[64px]">
         Case Studies
       </h1>
       <p className="mt-4 max-w-[44ch] text-[16px] leading-[1.65] text-ink-secondary">

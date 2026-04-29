@@ -4,7 +4,7 @@ export default function AboutPage() {
       <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-ink-disabled">
         Coming soon
       </p>
-      <h1 className="mt-4 font-serif text-[48px] leading-[1.04] text-ink capitalize">about</h1>
+      <h1 className="mt-4 font-serif text-[32px] leading-[1.04] text-ink capitalize sm:text-[40px] md:text-[48px]">about</h1>
     </main>
   );
 }

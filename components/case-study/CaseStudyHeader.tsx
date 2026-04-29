@@ -37,7 +37,7 @@ export default function CaseStudyHeader({ study }: CaseStudyHeaderProps) {
       </div>
 
       {/* Title */}
-      <h1 className="font-serif text-[40px] leading-[1.07] text-ink md:text-[52px] lg:text-[60px]">
+      <h1 className="font-serif text-[26px] leading-[1.07] text-ink sm:text-[34px] md:text-[52px] lg:text-[60px]">
         {title}
       </h1>
 

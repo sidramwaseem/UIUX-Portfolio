@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   title: "Sidra Waseem — Designer",
   description:
     "Portfolio of Sidra Waseem — designer of B2B systems, product workflows, and marketing surfaces.",
+  icons: {
+    icon: { url: "/icon.png", type: "image/png", sizes: "200x200" },
+  },
   openGraph: {
     title: "Sidra Waseem — Designer",
     description: "Designer of systems and surfaces.",

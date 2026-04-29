@@ -16,7 +16,7 @@ export default function ShotsPage() {
           Visual explorations
         </p>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <h1 className="font-serif text-[48px] leading-[1.04] text-ink md:text-[64px]">
+          <h1 className="font-serif text-[32px] leading-[1.04] text-ink sm:text-[40px] md:text-[48px] lg:text-[64px]">
             Shots
           </h1>
           <p className="max-w-[36ch] text-[16px] leading-[1.65] text-ink-secondary sm:text-right">

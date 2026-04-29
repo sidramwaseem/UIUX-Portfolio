@@ -29,8 +29,8 @@ export default function WorkspaceCard({
           "border-[rgba(255,107,107,0.18)] hover:border-[rgba(255,107,107,0.55)]",
           "hover:shadow-[0_20px_56px_-12px_rgba(255,107,107,0.18)]",
           featured
-            ? "min-h-[520px] p-10 md:min-h-0"
-            : "min-h-[240px] p-7 md:min-h-[260px]",
+            ? "min-h-[320px] p-6 sm:min-h-[440px] sm:p-8 md:min-h-0 md:p-10"
+            : "min-h-[200px] p-5 sm:min-h-[240px] sm:p-6 md:min-h-[260px] md:p-7",
         ].join(" ")}
         style={{
           background: featured
@@ -53,7 +53,7 @@ export default function WorkspaceCard({
           <h2
             className={[
               "font-serif leading-[1.05] text-ink transition-colors duration-200 group-hover:text-[#FF6B6B]",
-              featured ? "text-[44px] md:text-[56px]" : "text-[28px] md:text-[34px]",
+              featured ? "text-[26px] sm:text-[36px] md:text-[56px]" : "text-[22px] sm:text-[26px] md:text-[34px]",
             ].join(" ")}
           >
             {title}

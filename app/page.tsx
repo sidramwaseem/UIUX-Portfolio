@@ -15,12 +15,12 @@ export default function HomePage() {
         <HomeGrid />
 
         <footer className="mt-20 flex items-center justify-between border-t border-[#D9D7D2] pt-8">
-          <span className="font-mono text-[18px] uppercase tracking-[0.1em] text-ink-disabled">
+          <span className="font-mono text-[12px] uppercase tracking-[0.1em] text-ink-disabled sm:text-[14px] md:text-[18px]">
             Available for work
           </span>
           <a
             href="mailto:sidraw24@gmail.com"
-            className="font-mono text-[18px] uppercase tracking-[0.1em] text-ink-secondary transition-colors duration-150 hover:text-ink"
+            className="font-mono text-[12px] uppercase tracking-[0.1em] text-ink-secondary transition-colors duration-150 hover:text-ink sm:text-[14px] md:text-[18px]"
           >
             Get in touch →
           </a>

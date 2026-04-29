@@ -62,7 +62,7 @@ export default function HomeGrid() {
           viewport={{ once: true, amount: 0.8 }}
         >
           <motion.h2
-            className="font-serif text-[64px] leading-[1.02] tracking-[-0.025em] text-ink md:text-[84px] lg:text-[100px]"
+            className="font-serif text-[38px] leading-[1.02] tracking-[-0.025em] text-ink sm:text-[52px] md:text-[84px] lg:text-[100px]"
             variants={{
               hidden: { y: reducedMotion ? "0%" : "110%" },
               visible: { y: "0%", transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } },
@@ -80,7 +80,7 @@ export default function HomeGrid() {
           viewport={{ once: true, amount: 0.8 }}
         >
           <motion.h2
-            className="font-serif text-[64px] leading-[1.02] tracking-[-0.025em] text-ink md:text-[84px] lg:text-[100px]"
+            className="font-serif text-[38px] leading-[1.02] tracking-[-0.025em] text-ink sm:text-[52px] md:text-[84px] lg:text-[100px]"
             variants={{
               hidden: { y: reducedMotion ? "0%" : "110%" },
               visible: { y: "0%", transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.08 } },

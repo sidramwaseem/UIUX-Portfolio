@@ -48,7 +48,7 @@ export default function HomeAbout() {
       style={{ backgroundColor: "#FF6B6B" }}
     >
       <div className="page-container">
-        <p className="font-serif text-[58px] leading-[1.12] text-ink">
+        <p className="font-serif text-[28px] leading-[1.12] text-ink sm:text-[38px] md:text-[48px] lg:text-[58px]">
           {reduced
             ? WORDS.join(" ")
             : WORDS.map((word, i) => (
