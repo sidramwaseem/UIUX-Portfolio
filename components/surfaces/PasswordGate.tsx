@@ -42,7 +42,7 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
 
   return (
     <div className="flex min-h-[calc(100vh-64px)] flex-col items-center justify-center px-6">
-      <div className="w-full max-w-sm">
+      <div className="w-full max-w-md">
 
         {/* Lock mark */}
         <div className="mb-8 flex justify-center">
@@ -56,10 +56,10 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
           <h1 className="font-serif text-[32px] leading-[1.1] text-ink md:text-[36px]">
             Private work
           </h1>
-          <p className="mt-3 text-[14px] leading-[1.65] text-ink-secondary">
-            Marketing and brand work shared selectively.
-            <br />
-            Enter the password to access.
+          <p className="mt-3 text-[16px] leading-[1.65] text-ink-secondary">
+            This work features real people and real faces —<br />
+            so naturally, I can't just let anyone in.<br />
+            That said, I might make an exception if you're nice about it.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
               placeholder="Password"
               autoComplete="current-password"
               spellCheck={false}
-              className={`w-full rounded-xl border bg-white px-4 py-3.5 pr-12 text-[15px] text-ink outline-none transition-all duration-150 placeholder:text-ink-disabled focus:border-accent focus:ring-2 focus:ring-accent/10 ${
+              className={`w-full rounded-xl border bg-white px-4 py-3.5 pr-12 text-[16px] text-ink outline-none transition-all duration-150 placeholder:text-ink-disabled focus:border-[#FF6B6B] focus:ring-2 focus:ring-[#FF6B6B]/10 ${
                 error
                   ? "border-red-300 focus:border-red-400 focus:ring-red-100"
                   : "border-[#D9D7D2]"
@@ -102,7 +102,7 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
               error ? "max-h-8 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <p className="font-mono text-[11px] uppercase tracking-[0.06em] text-red-500">
+            <p className="font-mono text-[12px] uppercase tracking-[0.06em] text-red-500">
               Incorrect password
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
           <button
             type="submit"
             disabled={!value.trim() || submitting}
-            className="relative mt-4 w-full overflow-hidden rounded-xl bg-accent px-6 py-3.5 text-[14px] font-medium text-white transition-all duration-200 hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-40"
+            className="relative mt-4 w-full overflow-hidden rounded-xl bg-[#FF6B6B] px-6 py-3.5 text-[16px] font-medium text-white transition-all duration-200 hover:bg-[#e55a5a] disabled:cursor-not-allowed disabled:opacity-40"
           >
             <span
               className={`inline-flex items-center gap-2 transition-opacity duration-150 ${
@@ -132,10 +132,10 @@ export default function PasswordGate({ onSuccess }: PasswordGateProps) {
         </form>
 
         {/* Footer note */}
-        <p className="mt-8 text-center font-mono text-[11px] uppercase tracking-[0.08em] text-ink-disabled">
+        <p className="mt-8 text-center font-mono text-[12px] uppercase tracking-[0.08em] text-ink-disabled">
           No password?{" "}
           <a
-            href="mailto:Waseem.sidra2025@gmail.com"
+            href="mailto:sidraw24@gmail.com"
             className="transition-colors duration-150 hover:text-ink-secondary"
           >
             Reach out

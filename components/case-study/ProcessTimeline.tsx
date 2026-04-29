@@ -11,10 +11,10 @@ export default function ProcessTimeline({ steps }: ProcessTimelineProps) {
       {steps.map((step) => (
         <div key={step.phase} className="relative">
           {/* Timeline dot */}
-          <div className="absolute -left-[29px] top-[6px] h-2 w-2 rounded-full border-2 border-accent bg-bg" />
+          <div className="absolute -left-[29px] top-[6px] h-2 w-2 rounded-full border-2 border-[#FF6B6B] bg-bg" />
 
           {/* Phase label */}
-          <p className="mb-2 font-mono text-[12px] uppercase tracking-[0.1em] text-accent">
+          <p className="mb-2 font-mono text-[12px] uppercase tracking-[0.1em] text-[#FF6B6B]">
             {step.phase}
           </p>
 

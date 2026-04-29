@@ -10,7 +10,7 @@ export default function ScrollProgress() {
 
   return (
     <motion.div
-      className="fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-accent"
+      className="fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-[#FF6B6B]"
       style={{ scaleX: scrollYProgress }}
     />
   );

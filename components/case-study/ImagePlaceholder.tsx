@@ -16,13 +16,13 @@ export default function ImagePlaceholder({ slot, src, alt, caption }: CaseStudyI
         </div>
       ) : (
         <div className="flex h-64 w-full items-center justify-center rounded-xl border border-dashed border-[#D9D7D2] bg-[#F5F4F0] md:h-80">
-          <p className="font-mono text-[11px] uppercase tracking-[0.12em] text-ink-disabled">
+          <p className="font-mono text-[12px] uppercase tracking-[0.12em] text-ink-disabled">
             Image {slot}
           </p>
         </div>
       )}
       {caption && (
-        <figcaption className="mt-3 text-center font-mono text-[11px] leading-[1.6] tracking-wide text-ink-disabled">
+        <figcaption className="mt-3 text-center font-mono text-[13px] leading-[1.6] tracking-wide text-ink-disabled">
           {caption}
         </figcaption>
       )}

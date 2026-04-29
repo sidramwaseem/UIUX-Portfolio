@@ -57,7 +57,7 @@ export function Callout({
   attribution?: string;
 }) {
   return (
-    <figure className="my-8 border-l-2 border-accent pl-6">
+    <figure className="my-8 border-l-2 border-[#FF6B6B] pl-6">
       <blockquote className="text-[17px] italic leading-[1.65] text-ink md:text-[18px]">
         {children}
       </blockquote>

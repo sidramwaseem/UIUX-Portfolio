@@ -1,36 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const ROLES = ["UI/UX Designer", "Product Designer", "UI Developer", "Vibe Coder"] as const;
 
-const HOLD_MS  = 3000;
-const EXIT_MS  = 400;
-const ENTER_MS = 540;
-
-const exitStyle: React.CSSProperties = {
-  opacity: 0,
-  transform: "translateY(-6px)",
-  transition: `opacity ${EXIT_MS}ms ease, transform ${EXIT_MS}ms ease`,
-};
-
-const enterStyle: React.CSSProperties = {
-  animation: `roleIn ${ENTER_MS}ms cubic-bezier(0.22, 1, 0.36, 1) both`,
-};
+const HOLD_MS = 2800;
 
 export default function Hero() {
-  const [index, setIndex]       = useState(0);
-  const [isExiting, setExiting] = useState(false);
+  const [index, setIndex] = useState(0);
+  const reduced = useReducedMotion();
 
   useEffect(() => {
     const id = setInterval(() => {
-      setExiting(true);
-      setTimeout(() => {
-        setIndex((i) => (i + 1) % ROLES.length);
-        setExiting(false);
-      }, EXIT_MS);
-    }, HOLD_MS + EXIT_MS);
-
+      setIndex((i) => (i + 1) % ROLES.length);
+    }, HOLD_MS);
     return () => clearInterval(id);
   }, []);
 
@@ -39,41 +23,46 @@ export default function Hero() {
       className="relative flex h-screen w-full flex-col justify-end pb-12 md:pb-16 lg:pb-20"
       style={{
         background:
-          "linear-gradient(to right, #FFF6EE 0%, rgba(255,107,107,0.28) 100%)",
+          "linear-gradient(to right, #FFF6EE 0%, rgba(255,107,107,0.13) 100%)",
       }}
     >
-      {/* Constrain text to the same grid as every other page section */}
       <div className="page-container">
 
         {/* Name + animated role — bottom-left anchor */}
         <div>
-          <h1 className="font-serif text-[50px] leading-[1.05] tracking-[-0.02em] text-ink">
+          <h1 className="font-serif text-[64px] leading-[1.05] tracking-[-0.02em] text-ink">
             Sidra Waseem
           </h1>
 
-          {/* Designation — matches name size, animates in brand primary */}
+          {/* Clip window — only one role visible at a time */}
           <div
-            className="mt-1 h-[55px] overflow-hidden"
+            className="relative mt-1 h-[68px] overflow-hidden"
             aria-live="polite"
             aria-atomic="true"
           >
-            <span
-              key={index}
-              className="block font-serif text-[50px] leading-[1.05] tracking-[-0.02em] whitespace-nowrap"
-              style={{ color: "#FF6B6B", ...(isExiting ? exitStyle : enterStyle) }}
-            >
-              {ROLES[index]}
-            </span>
+            <AnimatePresence initial={false}>
+              <motion.span
+                key={index}
+                className="absolute font-serif text-[64px] leading-[1.05] tracking-[-0.02em] whitespace-nowrap"
+                style={{ color: "#FF6B6B" }}
+                initial={reduced ? false : { y: "100%", opacity: 0 }}
+                animate={{ y: "0%", opacity: 1 }}
+                exit={reduced ? undefined : { y: "-100%", opacity: 0 }}
+                transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+              >
+                {ROLES[index]}
+              </motion.span>
+            </AnimatePresence>
           </div>
 
-          <p className="mt-6 max-w-sm text-[16px] leading-relaxed text-ink-secondary">
+          <p className="mt-6 max-w-sm text-[20px] leading-relaxed text-ink-secondary">
             I design systems that feel inevitable —<br />
             usually after rethinking them three times.
           </p>
         </div>
 
         {/* Whimsical one-liner — bottom-right, for compositional balance */}
-        <p className="absolute bottom-12 right-6 text-right font-mono text-[9px] uppercase leading-[1.8] tracking-[0.16em] text-ink-disabled md:bottom-16 md:right-12 lg:bottom-20 lg:right-20">
+        <p className="absolute bottom-12 right-6 text-right text-[20px] leading-relaxed text-ink-secondary md:bottom-16 md:right-12 lg:bottom-20 lg:right-20">
           Designing things people use.<br />
           Occasionally on purpose.
         </p>

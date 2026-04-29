@@ -3,6 +3,5 @@
   "/systems/page": "app/systems/page.js",
   "/systems/[slug]/page": "app/systems/[slug]/page.js",
   "/surfaces/page": "app/surfaces/page.js",
-  "/shots/page": "app/shots/page.js",
-  "/systems/right-click-filter-indication/page": "app/systems/right-click-filter-indication/page.js"
+  "/shots/page": "app/shots/page.js"
 }

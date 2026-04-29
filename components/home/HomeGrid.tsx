@@ -1,6 +1,9 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import { caseStudies } from "@/lib/case-studies";
+import { surfaces } from "@/lib/surfaces";
+import { shots } from "@/lib/shots";
 import WorkspaceCard from "./WorkspaceCard";
 
 const SECTIONS = [
@@ -9,7 +12,7 @@ const SECTIONS = [
     title: "Case Studies",
     description:
       "UX design, B2B product thinking, and complex workflow design for enterprise.",
-    meta: "12 projects",
+    meta: `${caseStudies.length} projects`,
     href: "/systems",
     preview: "grid" as const,
     featured: true,
@@ -19,7 +22,7 @@ const SECTIONS = [
     title: "Social Media Work",
     description:
       "Landing pages, social media, whitepapers, and marketing design.",
-    meta: "8 projects",
+    meta: `${surfaces.length} posts`,
     href: "/surfaces",
     preview: "bars" as const,
   },
@@ -27,7 +30,7 @@ const SECTIONS = [
     index: 3,
     title: "Shots",
     description: "Visual explorations, UI experiments, and design studies.",
-    meta: "24 shots",
+    meta: `${shots.length} shots`,
     href: "/shots",
     preview: "dots" as const,
   },

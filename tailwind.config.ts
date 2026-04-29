@@ -16,14 +16,14 @@ const config: Config = {
         bg: "#FFF6EE",
         primary: "#FF6B6B",
         accent: {
-          DEFAULT: "#2D5BE3",
-          hover: "#1E46C7",
-          muted: "#EEF2FD",
+          DEFAULT: "#FF6B6B",
+          hover: "#e55a5a",
+          muted: "#FFEEEE",
         },
         card: {
           bg: "#1C1B1A",
           border: "#2E2D2B",
-          "border-hover": "#2D5BE3",
+          "border-hover": "#FF6B6B",
           text: "#F0EDE8",
           secondary: "#8A877F",
           dim: "#4A4845",

@@ -35,14 +35,14 @@ function CardInner({ shot }: ShotCardProps) {
 
         <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/65 via-black/20 to-transparent p-5 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100">
           <div className="translate-y-2 transition-transform duration-300 ease-out group-hover:translate-y-0">
-            <h3 className="text-[14px] font-medium leading-[1.35] text-white">
+            <h3 className="text-[15px] font-medium leading-[1.35] text-white">
               {title}
             </h3>
             <ul className="mt-2.5 flex flex-wrap gap-1.5">
               {tags.map((tag) => (
                 <li
                   key={tag}
-                  className="rounded-full bg-white/20 px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.06em] text-white/85 backdrop-blur-sm"
+                  className="rounded-full bg-white/20 px-2 py-0.5 font-mono text-[11px] uppercase tracking-[0.06em] text-white/85 backdrop-blur-sm"
                 >
                   {tag}
                 </li>

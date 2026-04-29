@@ -105,7 +105,7 @@ export const surfaces: Surface[] = [
     client: "Enterprise64",
     year: "2024",
     aspect: "square",
-    gradient: "linear-gradient(135deg, #1a1917 0%, #2D5BE3 100%)",
+    gradient: "linear-gradient(135deg, #1a1917 0%, #FF6B6B 100%)",
     src: "/images/social-media/JPEG/01.jpg",
     images: [
       "/images/social-media/JPEG/01.jpg",
@@ -158,7 +158,7 @@ export const surfaces: Surface[] = [
     client: "Enterprise64",
     year: "2024",
     aspect: "square",
-    gradient: "linear-gradient(135deg, #0d1631 0%, #2D5BE3 100%)",
+    gradient: "linear-gradient(135deg, #0d1631 0%, #FF6B6B 100%)",
     src: "/images/social-media/Analytical Problem carousel/Title copy.jpg",
     images: [
       "/images/social-media/Analytical Problem carousel/Title copy.jpg",

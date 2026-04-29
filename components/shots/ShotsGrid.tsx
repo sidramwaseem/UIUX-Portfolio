@@ -53,7 +53,7 @@ export default function ShotsGrid() {
 
       {/* Empty state */}
       {filtered.length === 0 && (
-        <p className="py-20 text-center font-mono text-[12px] uppercase tracking-[0.1em] text-ink-disabled">
+        <p className="py-20 text-center font-mono text-[13px] uppercase tracking-[0.1em] text-ink-disabled">
           No shots in this category yet
         </p>
       )}
@@ -72,7 +72,7 @@ function FilterPill({ label, count, active, onClick }: FilterPillProps) {
   return (
     <button
       onClick={onClick}
-      className={`flex items-center gap-2 rounded-full border px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.08em] transition-all duration-150 ${
+      className={`flex items-center gap-2 rounded-full border px-4 py-1.5 font-mono text-[12px] uppercase tracking-[0.08em] transition-all duration-150 ${
         active
           ? "border-ink bg-ink text-white"
           : "border-[#D9D7D2] text-ink-secondary hover:border-ink hover:text-ink"

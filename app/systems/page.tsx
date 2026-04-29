@@ -10,7 +10,7 @@ export default function SystemsPage() {
       <h1 className="font-serif text-[48px] leading-[1.04] text-ink md:text-[64px]">
         Case Studies
       </h1>
-      <p className="mt-4 max-w-[44ch] text-[15px] leading-[1.65] text-ink-secondary">
+      <p className="mt-4 max-w-[44ch] text-[16px] leading-[1.65] text-ink-secondary">
         In-depth process documentation — from problem framing through to shipped solutions.
       </p>
 

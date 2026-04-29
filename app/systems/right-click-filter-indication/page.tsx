@@ -89,7 +89,7 @@ export default function RightClickFilterIndicationPage() {
                     key={item}
                     className="flex items-start gap-3 text-[15px] leading-[1.6] text-ink-secondary"
                   >
-                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-[#FF6B6B]" />
                     {item}
                   </li>
                 ))}
@@ -133,7 +133,7 @@ export default function RightClickFilterIndicationPage() {
                     key={item}
                     className="flex items-start gap-3 text-[15px] leading-[1.6] text-ink-secondary"
                   >
-                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-[#FF6B6B]" />
                     {item}
                   </li>
                 ))}
@@ -154,7 +154,7 @@ export default function RightClickFilterIndicationPage() {
               <div className="space-y-12">
                 {/* Direction 01 */}
                 <div className="space-y-4">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-accent">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#FF6B6B]">
                     Direction 01 — Chip-Based Filters
                   </p>
                   <Prose>
@@ -193,7 +193,7 @@ export default function RightClickFilterIndicationPage() {
 
                 {/* Direction 02 */}
                 <div className="space-y-4">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-accent">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.14em] text-[#FF6B6B]">
                     Direction 02 — Funnel Icon
                   </p>
                   <Prose>
@@ -267,7 +267,7 @@ export default function RightClickFilterIndicationPage() {
                       key={item}
                       className="flex items-start gap-3 text-[15px] leading-[1.6] text-ink-secondary"
                     >
-                      <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                      <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-[#FF6B6B]" />
                       {item}
                     </li>
                   ))}
@@ -329,7 +329,7 @@ export default function RightClickFilterIndicationPage() {
                     key={item}
                     className="flex items-start gap-3 text-[15px] leading-[1.6] text-ink-secondary"
                   >
-                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-[#FF6B6B]" />
                     {item}
                   </li>
                 ))}

@@ -98,7 +98,7 @@ export default async function CaseStudyPage({ params }: Props) {
               <ul className="mt-2 space-y-3">
                 {myRole.responsibilities.map((r) => (
                   <li key={r} className="flex items-start gap-3 text-[15px] leading-[1.6] text-ink-secondary">
-                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                    <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-[#FF6B6B]" />
                     {r}
                   </li>
                 ))}
@@ -111,7 +111,7 @@ export default async function CaseStudyPage({ params }: Props) {
                 <ul className="mt-2 space-y-3">
                   {constraints.map((c) => (
                     <li key={c} className="flex items-start gap-3 text-[15px] leading-[1.6] text-ink-secondary">
-                      <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent" />
+                      <span className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-[#FF6B6B]" />
                       {c}
                     </li>
                   ))}

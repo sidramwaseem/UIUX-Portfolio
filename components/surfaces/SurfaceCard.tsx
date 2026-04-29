@@ -78,13 +78,13 @@ export default function SurfaceCard({ surface }: SurfaceCardProps) {
 
       <div className="mt-4 px-0.5">
         <div className="mb-2.5 flex items-center justify-between">
-          <span className="rounded-full bg-accent-muted px-2.5 py-0.5 font-mono text-[11px] uppercase tracking-[0.08em] text-accent">
+          <span className="rounded-full bg-[#FFEEEE] px-2.5 py-0.5 font-mono text-[11px] uppercase tracking-[0.08em] text-[#FF6B6B]">
             {isCarousel ? `${images!.length} slides` : "Post"}
           </span>
           <span className="font-mono text-[12px] text-ink-disabled">{year}</span>
         </div>
 
-        <h3 className="text-[16px] font-medium leading-[1.4] text-ink transition-colors duration-150 group-hover:text-accent">
+        <h3 className="text-[16px] font-medium leading-[1.4] text-ink transition-colors duration-150 group-hover:text-[#FF6B6B]">
           {title}
         </h3>
 

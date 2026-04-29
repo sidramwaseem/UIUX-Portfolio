@@ -19,7 +19,7 @@ export default function ShotsPage() {
           <h1 className="font-serif text-[48px] leading-[1.04] text-ink md:text-[64px]">
             Shots
           </h1>
-          <p className="max-w-[36ch] text-[15px] leading-[1.65] text-ink-secondary sm:text-right">
+          <p className="max-w-[36ch] text-[16px] leading-[1.65] text-ink-secondary sm:text-right">
             Quick visual explorations — UI studies, type experiments,
             brand directions, and work-in-progress artifacts.
           </p>

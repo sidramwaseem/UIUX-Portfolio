@@ -63,7 +63,7 @@ export default function TableOfContents({ items }: { items?: TocItem[] }) {
                 >
                   <span
                     className={`h-px shrink-0 bg-current transition-all duration-200 ${
-                      isActive ? "w-5 !bg-accent" : "w-3"
+                      isActive ? "w-5 !bg-[#FF6B6B]" : "w-3"
                     }`}
                   />
                   {label}

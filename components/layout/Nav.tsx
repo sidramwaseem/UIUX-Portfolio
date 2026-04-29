@@ -50,7 +50,7 @@ export default function Nav() {
             >
               {label}
               {pathname === href && (
-                <span className="absolute -bottom-0.5 left-0 h-px w-full bg-accent" />
+                <span className="absolute -bottom-0.5 left-0 h-px w-full bg-[#FF6B6B]" />
               )}
             </Link>
           </li>

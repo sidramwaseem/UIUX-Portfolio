@@ -19,7 +19,7 @@ export default function HomePage() {
             Available for work
           </span>
           <a
-            href="mailto:Waseem.sidra2025@gmail.com"
+            href="mailto:sidraw24@gmail.com"
             className="font-mono text-[18px] uppercase tracking-[0.1em] text-ink-secondary transition-colors duration-150 hover:text-ink"
           >
             Get in touch →
