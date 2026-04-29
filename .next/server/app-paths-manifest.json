@@ -1,7 +1,0 @@
-{
-  "/systems/page": "app/systems/page.js",
-  "/page": "app/page.js",
-  "/systems/[slug]/page": "app/systems/[slug]/page.js",
-  "/surfaces/page": "app/surfaces/page.js",
-  "/shots/page": "app/shots/page.js"
-}
