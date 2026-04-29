@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Fraunces } from "next/font/google";
 import Nav from "@/components/layout/Nav";
+import CustomCursor from "@/components/cursor/CustomCursor";
+import CursorModeBar from "@/components/cursor/CursorModeBar";
+import { CursorProvider } from "@/components/cursor/CursorContext";
 import "./globals.css";
 
 const inter = Inter({
@@ -35,6 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
       <body className="font-sans" suppressHydrationWarning>
+        <CursorProvider>
+          <CustomCursor />
+          <CursorModeBar />
+        </CursorProvider>
         <Nav />
         {children}
       </body>

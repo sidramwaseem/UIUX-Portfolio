@@ -63,7 +63,7 @@ export default function CaseStudyCard({ study }: Props) {
           <h2 className="font-serif text-[24px] leading-[1.2] text-ink md:text-[28px]">
             {title}
           </h2>
-          <p className="mt-2 max-w-[52ch] text-[14px] leading-[1.65] text-ink-secondary">
+          <p className="mt-2 max-w-[52ch] text-[16px] leading-[1.65] text-ink-secondary">
             {subtitle}
           </p>
         </div>

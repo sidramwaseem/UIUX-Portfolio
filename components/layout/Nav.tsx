@@ -25,13 +25,13 @@ export default function Nav() {
     <nav
       className={`fixed inset-x-0 top-0 z-50 flex h-16 items-center justify-between px-6 transition-all duration-300 md:px-12 lg:px-20 ${
         scrolled
-          ? "bg-[#F5F4F0]/90 shadow-[0_1px_0_#D9D7D2] backdrop-blur-md"
+          ? "bg-[#FFF6EE]/90 shadow-[0_1px_0_#D9D7D2] backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
       <Link
         href="/"
-        className="font-mono text-[12px] uppercase tracking-[0.12em] text-ink transition-opacity duration-150 hover:opacity-60"
+        className="font-mono text-[18px] uppercase tracking-[0.12em] text-ink transition-opacity duration-150 hover:opacity-60"
       >
         SF
       </Link>
@@ -41,7 +41,7 @@ export default function Nav() {
           <li key={href}>
             <Link
               href={href}
-              className={`relative py-1 text-[13px] font-medium tracking-wide transition-colors duration-150 ${
+              className={`relative py-1 text-[18px] font-medium tracking-wide transition-colors duration-150 ${
                 pathname === href
                   ? "text-ink"
                   : "text-ink-secondary hover:text-ink"
@@ -57,7 +57,7 @@ export default function Nav() {
       </ul>
 
       {/* Mobile: show current section or menu hint */}
-      <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-ink-disabled md:hidden">
+      <span className="font-mono text-[18px] uppercase tracking-[0.1em] text-ink-disabled md:hidden">
         Menu
       </span>
     </nav>

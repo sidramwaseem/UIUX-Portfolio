@@ -13,7 +13,8 @@ const config: Config = {
         mono: ["'Courier New'", "Menlo", "monospace"],
       },
       colors: {
-        bg: "#F5F4F0",
+        bg: "#FFF6EE",
+        primary: "#FF6B6B",
         accent: {
           DEFAULT: "#2D5BE3",
           hover: "#1E46C7",

@@ -37,7 +37,7 @@ export default function WorkspaceCard({
           <h2 className="font-serif text-[36px] leading-[1.05] text-card-text transition-colors duration-150 group-hover:text-white md:text-[42px]">
             {title}
           </h2>
-          <p className="mt-3 max-w-[36ch] text-[14px] leading-[22px] text-card-secondary">
+          <p className="mt-3 max-w-[36ch] text-[16px] leading-[26px] text-card-secondary">
             {description}
           </p>
         </div>
